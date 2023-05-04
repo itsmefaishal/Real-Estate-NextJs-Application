@@ -34,9 +34,6 @@ export default function Home( {propertiesForRent, propertiesForSale} ) {
         imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4"
       />
       <Flex flexWrap='wrap'>
-        {propertiesForRent.map((property) => <Property property={property} key={property.id} /> )}
-      </Flex>
-      <Flex flexWrap='wrap'>
         {propertiesForSale.map((property) => <Property property={property} key={property.id} /> )}
       </Flex>
       <Banner 
@@ -49,6 +46,9 @@ export default function Home( {propertiesForRent, propertiesForSale} ) {
         linkName="/search?purpose=for-sale"
         imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4"
       />
+      <Flex flexWrap='wrap'>
+        {propertiesForRent.map((property) => <Property property={property} key={property.id} /> )}
+      </Flex>
     </Box>
   )
 }
