@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'next/link';
+import Link from 'next/link';
 import { Menu, MenuButton, MenuItem, IconButton, Flex, Box, Spacer, MenuList } from '@chakra-ui/react';
 import { FcMenu, FcHome, FcAbout } from 'react-icons/fc';
 import { BsSearch } from 'react-icons/bs';
 import { FiKey } from 'react-icons/fi';
 
-export const Navbar = () => {
-    return(
-        <Flex p='2' borderBottom='1px' borderColor='gray.100'>
+const Navbar = () => {
+    return (
+    <Flex p='2' borderBottom='1px' borderColor='gray.100'>
         <Box fontSize='3xl' color='blue.400' fontWeight='bold'>
             <Link href='/' paddingLeft='2' >ReState</Link>
         </Box>
@@ -31,7 +31,7 @@ export const Navbar = () => {
                 </MenuList>
             </Menu>
         </Box>
-   </Flex>
+    </Flex>
     );
 }
 
