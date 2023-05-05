@@ -4,6 +4,7 @@ import Navbar from '../components/navbar';
 import NProgress from 'nprogress';
 import { Box } from '@chakra-ui/react';
 import { ChakraProvider } from '@chakra-ui/react'
+import Footer from '@/components/footer';
 
 function MyApp({Component, pageProps}) {
   return (
@@ -19,7 +20,7 @@ function MyApp({Component, pageProps}) {
           <Component {...pageProps} />
         </main>
         <footer>
-          Footer
+          <Footer />
         </footer>
       </Box>
     </ChakraProvider>      
