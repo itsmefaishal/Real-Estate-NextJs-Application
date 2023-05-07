@@ -13,7 +13,7 @@ function MyApp({Component, pageProps}) {
         <title>ReState</title>
       </Head>
       <Box maxWidth='1280px' m='auto' >
-        <header className='navbar'>
+        <header>
           <Navbar />
         </header>
         <main>
